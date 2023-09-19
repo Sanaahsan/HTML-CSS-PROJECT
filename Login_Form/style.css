@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login form</form></title>
-</head>
-<body>
-    <section>
-        <aside>
-            <h1>Login</h1>
-            <h2>Please enter your credentials</h2>
-            <form action="">
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <button type="submit">Login</button>
-                
-            </form>
-            <p>Not Yet Regitered? <a href="">Sign Up</a></p>
-        </aside>
-    </section>
-    
-</body>
-<style>
+
+     html
     {
         margin: 0;
         padding: 0;
@@ -30,7 +7,9 @@
         font-family: 'Work Sans',sans-serif;
     }
     body{
-        background-image: linear-gradient(35deg, #f15e64, #eaa404);
+        background:url(back.jpg);
+        background-position: center;
+        background-size: cover;
     }
     section{
         width:100%;
@@ -41,10 +20,12 @@
 
     }
     section aside{
+        border: 2px solid black;
         width: 350px;
         padding: 20px;
-        background-color:white;
-        border-radius: 3px;
+        background:transparent;
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
         box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
     }
     section aside h1{
@@ -62,36 +43,48 @@
     }
     input[type=text],
     input[type=password]{
-        width:calc(100% -20px);
+        /*width:calc(100% -20px);*/
+        width: 93%;
         padding: 8px 10px;
-        font-size: 16px;
-        margin:8px 0;
+        font-size: 20px;
+        margin:8px auto;
         color:#363636;
         background-color:white;
         border:#c9c9c9 solid 1px;
-        border-radius: 3px;
-        transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border-radius: 12px;
+        transition: 0.7s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      
     }
     input[type=text]:focus,
     input[type=password]:focus{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     button[type=submit]{
-        margin: 8px 0;
-        width: 100%;
+        /* margin-top: 40px ;
+        margin-left: 85px;
+        margin-bottom: 10px; */
+        margin: 40px 0 15px 85px;
+        /* trbl-top right bottom: left; */
+        width: 50%;
         border: none;
         color:white;
         background-color: #f15e64;
         padding: 8px 0;
         font-size: 18px;
-        border-radius: 3px;
+        border-radius: 12px;
         cursor: pointer;
         transition: 0.2s all ease-in;
+       /* box-shadow: 0 0 5px #f15e64,
+        0 0 25px #f15e64;*/
     }
     button[type=submit]:hover{
-        background-color: yellow;
+        background-color: #42f5ec;
+       box-shadow: 0 0 5px #42f5ec,
+       0 0 25px #42f5ec,0 0 50px #42f5ec,
+       0 0 100x #42f5ec, 0 0 200px #42f5ec;
     }
-    section-aside p{
+    section aside p
+    {
         font-size: 16px;
         text-align: center;
         margin-top: 10px;
@@ -104,8 +97,15 @@
     section aside p a:hover{
         text-decoration:none;
     }
+    /*form input{
+        position: relative;
+        
+        left: 20%;
+
+    }
+
+
     
 
     
-</style>
-</html>
+
