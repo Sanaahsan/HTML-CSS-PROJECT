@@ -6,6 +6,8 @@
 }
  body{
     background-color:black;
+    height:100vh;
+    
  }  
 .rectangle{
     background:#0B0B45;
@@ -25,12 +27,16 @@
  }
 
  img{
-    position: absolute;
-    left: 614px;
+   display: block;
+   height: 100%;
+   width: auto;
+    /* position: absolute;
+    left: 614px; */
     /* bottom: 50px; */
-    top: 1px;
+    /* top: 1px; */
     border-radius: 50% 32px 32px 50%;
+    margin-left: auto;
     
     /* object-fit: scale-down; */
  }
- /* #0B0B45 */
+ 
