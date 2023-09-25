@@ -26,8 +26,11 @@
 
  img{
     position: absolute;
-    right: -200px;
-    top:0px;
-    border-radius: 40%;
+    left: 614px;
+    /* bottom: 50px; */
+    top: 1px;
+    border-radius: 50% 32px 32px 50%;
+    
+    /* object-fit: scale-down; */
  }
  /* #0B0B45 */
